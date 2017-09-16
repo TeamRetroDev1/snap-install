@@ -1,5 +1,6 @@
 #Bin bash
-chmod +x /home/retrobuntu/TeamRetroDev/update.sh
+cd /home/retrobuntu/TeamRetroDev/
+chmod +x update.sh
 echo "chmod executer"
 sleep 3
 echo actuellement indisponnible
