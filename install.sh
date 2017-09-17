@@ -1,5 +1,5 @@
 #Bin bash
-cd /home/retrobuntu/TeamRetroDev/
+cd $HOME/TeamRetroDev/
 chmod +x update.sh
 echo "chmod executer"
 sleep 3
