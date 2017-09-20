@@ -10,6 +10,11 @@ rm *.bak
 rm *.mp4
 rm *.cfg
 rm *.zip
+sh wheel.sh
+7z x wheelngpc.7z -o$HOME/RetroPie/roms/ngpc/wheel
+7z x wheel3do.7z -o$HOME/RetroPie/roms/3do/wheel
+7z x wheelpsx.7z -o$HOME/RetroPie/roms/psx/wheel
+rm *.7z
 echo
 echo '**********************************************'
 echo '*  Installation des videos pour MAME et FBA  *'
@@ -19,7 +24,7 @@ sh mame.sh
 7z x mame.7z.001 -o$HOME/.attract/layouts/Hyperspin/MAME/Video
 7z x mame.7z.001 -o$HOME/.attract/layouts/Hyperspin/FBA/Video
 rm mame.*
-sed -i".bak" '2,22d' install.sh
+sed -i".bak" '2,27d' install.sh
 echo
 echo '******************************************************************'
 echo '*  Installation des videos pour Capcom Play System I, II et III  *'
