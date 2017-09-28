@@ -2,14 +2,12 @@
 chmod +x $HOME/TeamRetroDev/update.sh
 7z x -y install.7z
 cp *.mp4 $HOME/.attract/layouts/Media/Main\ Menu/Video/
-cp *.cfg $HOME/.attract/
 cp *.zip $HOME/.attract/layouts/Media/Main\ Menu/Themes/
 cp 3do.the $HOME/.attract/layouts/Hyperspin/3do/Themes/default.zip
 cp namco.the $HOME/.attract/layouts/Hyperspin/Namco\ Classics/Themes/default.zip
 cp idea.bak $HOME/.wgetrc
 rm *.bak
 rm *.mp4
-rm *.cfg
 rm *.zip
 rm *.the
 sh wheel.sh
@@ -23,8 +21,8 @@ echo '*****************************************'
 echo
 sh mame.sh
 7z x -y mame.7z.001 -o$HOME/.attract/layouts/Hyperspin/MAME/Video/
-sed -i".bak" '2,28d' install.sh
-rm mame.7z.*
+rm mame.*
+sed -i".bak" '2,25d' install.sh
 echo
 echo '******************************************************************'
 echo '*  Installation des videos pour Capcom Play System I, II et III  *'
