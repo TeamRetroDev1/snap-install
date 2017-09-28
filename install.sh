@@ -1,6 +1,7 @@
 #/bin/bash
 chmod +x $HOME/TeamRetroDev/update.sh
 7z x -y install.7z
+cp attract.cfg $HOME/.attract/
 cp *.mp4 $HOME/.attract/layouts/Media/Main\ Menu/Video/
 cp *.zip $HOME/.attract/layouts/Media/Main\ Menu/Themes/
 cp 3do.the $HOME/.attract/layouts/Hyperspin/3do/Themes/default.zip
@@ -10,6 +11,7 @@ rm *.bak
 rm *.mp4
 rm *.zip
 rm *.the
+sleep 20
 sh wheel.sh
 7z x -y wheelngpc.7z -o$HOME/RetroPie/roms/ngpc/wheel
 7z x -y wheel3do.7z -o$HOME/RetroPie/roms/3do/wheel
