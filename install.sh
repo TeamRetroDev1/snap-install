@@ -18,7 +18,7 @@ sh wheel.sh
 7z x -y wheelngpc.7z -o$HOME/RetroPie/roms/ngpc/wheel
 7z x -y wheel3do.7z -o$HOME/RetroPie/roms/3do/wheel
 7z x -y wheelpsx.7z -o$HOME/RetroPie/roms/psx/wheel
-sed -i".bak" '2,21d' install.sh
+sed -i".bak" '2,22d' install.sh
 echo
 echo '*****************************************'
 echo '*  Installation des videos pour ARCADE  *'
@@ -27,7 +27,7 @@ echo
 sh mame.sh
 7z x -y mame.7z.001 -o$HOME/.attract/layouts/Hyperspin/MAME/Video/
 rm mame.*
-sed -i".bak" '2,9d' install.sh
+sed -i".bak" '2,10d' install.sh
 echo
 echo '******************************************************************'
 echo '*  Installation des videos pour Capcom Play System I, II et III  *'
