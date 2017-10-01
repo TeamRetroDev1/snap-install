@@ -1,10 +1,8 @@
-#/bin/bash
+#!/bin/sh
 chmod +x $HOME/TeamRetroDev/update.sh
 7z x -y install.7z
-mkdir $HOME/.attract/layouts/Hyperspin/Namco\ Classics
-mkdir $HOME/.attract/layouts/Hyperspin/Namco\ Classics/Themes
-mkdir $HOME/.attract/layouts/Hyperspin/3do
-mkdir $HOME/.attract/layouts/Hyperspin/3do/Themes
+mkdir -p $HOME/.attract/layouts/Hyperspin/Namco\ Classics/Themes
+mkdir -p $HOME/.attract/layouts/Hyperspin/3do/Themes
 cp *.mp4 $HOME/.attract/layouts/Media/Main\ Menu/Video/
 cp *.zip $HOME/.attract/layouts/Media/Main\ Menu/Themes/
 cp 3do.the $HOME/.attract/layouts/Hyperspin/3do/Themes/default.zip
@@ -18,7 +16,7 @@ sh wheel.sh
 7z x -y wheelngpc.7z -o$HOME/RetroPie/roms/ngpc/wheel
 7z x -y wheel3do.7z -o$HOME/RetroPie/roms/3do/wheel
 7z x -y wheelpsx.7z -o$HOME/RetroPie/roms/psx/wheel
-sed -i".bak" '2,22d' install.sh
+sed -i".bak" '2,20d' install.sh
 echo
 echo '*****************************************'
 echo '*  Installation des videos pour ARCADE  *'
