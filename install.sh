@@ -1,8 +1,8 @@
 #/bin/bash
 chmod +x $HOME/TeamRetroDev/update.sh
 7z x -y install.7z
-mkdir $HOME/.attract/layouts/Hyperspin/Namco\ classics
-mkdir $HOME/.attract/layouts/Hyperspin/Namco\ classics/Themes
+mkdir $HOME/.attract/layouts/Hyperspin/Namco\ Classics
+mkdir $HOME/.attract/layouts/Hyperspin/Namco\ Classics/Themes
 mkdir $HOME/.attract/layouts/Hyperspin/3do
 mkdir $HOME/.attract/layouts/Hyperspin/3do/Themes
 cp *.mp4 $HOME/.attract/layouts/Media/Main\ Menu/Video/
